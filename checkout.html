@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechWorld - Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">TechWorld</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#products">Products</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Checkout -->
+    <section class="checkout-section">
+
+        <h2>Checkout 🧾</h2>
+
+        <div class="checkout-container">
+
+            <!-- Customer Details -->
+            <div class="checkout-form">
+
+                <h3>Shipping Information</h3>
+
+                <form id="checkout-form">
+
+                    <label>Full Name</label>
+                    <input
+                        type="text"
+                        id="customer-name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+                    <label>Email</label>
+                    <input
+                        type="email"
+                        id="customer-email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                    <label>Phone Number</label>
+                    <input
+                        type="tel"
+                        id="customer-phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+
+                    <label>Address</label>
+                    <textarea
+                        id="customer-address"
+                        placeholder="Enter your full address"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                    <label>City</label>
+                    <input
+                        type="text"
+                        id="customer-city"
+                        placeholder="Enter your city"
+                        required
+                    >
+
+                    <label>PIN Code</label>
+                    <input
+                        type="text"
+                        id="customer-pin"
+                        placeholder="Enter PIN code"
+                        required
+                    >
+
+                    <h3>Payment Method</h3>
+
+                    <div class="payment-options">
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="card"
+                                required
+                            >
+                            💳 Credit / Debit Card
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="upi"
+                            >
+                            📱 UPI
+                        </label>
+
+                        <label>
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cod"
+                            >
+                            💵 Cash on Delivery
+                        </label>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="place-order-btn"
+                    >
+                        Place Order
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Order Summary -->
+            <div class="checkout-summary">
+
+                <h3>Order Summary</h3>
+
+                <div id="checkout-items">
+                    <!-- Products will appear here -->
+                </div>
+
+                <hr>
+
+                <p>
+                    Subtotal:
+                    <strong id="checkout-subtotal">
+                        ₹0
+                    </strong>
+                </p>
+
+                <p>
+                    Shipping:
+                    <strong>FREE</strong>
+                </p>
+
+                <h3>
+                    Total:
+                    <span id="checkout-total">
+                        ₹0
+                    </span>
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 TechWorld. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

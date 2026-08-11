@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechWorld - Electronics & Gadgets</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+<!-- Header -->
+<header>
+
+    <div class="logo">TechWorld</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+        <a href="cart.html">
+            🛒 Cart <span id="cart-count">0</span>
+        </a>
+
+        <a href="wishlist.html" class="wishlist-nav-btn">
+            ❤️ Wishlist <span id="wishlist-count">0</span>
+        </a>
+
+        <a href="order-history.html" class="order-nav-btn">
+            📦 Orders
+        </a>
+    </nav>
+
+</header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <h1>Upgrade Your Tech Life</h1>
+
+            <p>
+                Discover the latest smartphones, laptops,
+                headphones, smartwatches and accessories.
+            </p>
+
+            <button class="shop-now-btn" onclick="window.location.href='#products'">
+    🛍️ Shop Now
+</button>
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <h3>📱 Smartphones</h3>
+                <p>Latest smartphones from top brands.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>💻 Laptops</h3>
+                <p>Powerful laptops for work and gaming.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>🎧 Audio</h3>
+                <p>Headphones, earbuds and speakers.</p>
+            </div>
+
+            <div class="category-card">
+                <h3>⌚ Wearables</h3>
+                <p>Smartwatches and fitness bands.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Featured Products -->
+   <section id="products" class="products">
+
+    <h2>Our Products</h2>
+
+    <!-- Search and Filter -->
+    <div class="product-controls">
+
+        <input
+            type="text"
+            id="search-input"
+            placeholder="🔍 Search products..."
+        >
+
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="Smartphones">Smartphones</option>
+            <option value="Laptops">Laptops</option>
+            <option value="Tablets">Tablets</option>
+            <option value="Audio">Audio</option>
+            <option value="Wearables">Wearables</option>
+        </select>
+
+        <select id="brand-filter">
+            <option value="all">All Brands</option>
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Google">Google</option>
+            <option value="OnePlus">OnePlus</option>
+            <option value="Dell">Dell</option>
+            <option value="HP">HP</option>
+            <option value="Sony">Sony</option>
+        </select>
+
+    </div>
+
+    <div id="product-container" class="product-container">
+        <!-- Products will be displayed here -->
+    </div>
+
+</section>
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <h2>Why Choose TechWorld?</h2>
+
+        <p>
+            TechWorld brings you quality electronics and gadgets
+            at competitive prices with a simple and reliable
+            shopping experience.
+        </p>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: support@techworld.com</p>
+        <p>Phone: +91 7012056223</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 TechWorld. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TechWorld - Order Tracking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            TechWorld
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#products">
+                Products
+            </a>
+
+            <a href="index.html#categories">
+                Categories
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+            <a href="cart.html">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </a>
+
+            <a href="wishlist.html">
+                ❤️ Wishlist
+                <span id="wishlist-count">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Order Tracking -->
+
+    <section class="tracking-section">
+
+        <h1>
+            📦 Track Your Order
+        </h1>
+
+        <p class="tracking-subtitle">
+            Enter your order ID to check your order status.
+        </p>
+
+
+        <div class="tracking-box">
+
+            <input
+                type="text"
+                id="order-id"
+                placeholder="Enter Order ID e.g. TW1001"
+            >
+
+            <button onclick="trackOrder()">
+                Track Order 🔍
+            </button>
+
+        </div>
+
+
+        <div id="tracking-result">
+            <!-- Order status will appear here -->
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 TechWorld. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
